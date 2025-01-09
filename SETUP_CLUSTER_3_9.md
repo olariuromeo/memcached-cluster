@@ -29,7 +29,7 @@ The configuration is defined in a `docker-compose-cluster-3-9.yaml` file, which 
 To start the cluster, run the following command in the terminal:
 
 ```bash
-docker-compose -f docker-compose-cluster-3-9.yaml up -d
+docker compose -f docker-compose-cluster-3-9.yaml up -d
 ```
 
 The `-d` flag runs the containers in detached mode.
@@ -38,14 +38,14 @@ The `-d` flag runs the containers in detached mode.
 You can monitor the logs of each service using:
 
 ```bash
-docker-compose -f docker-compose-cluster-3-9.yaml logs -f
+docker compose -f docker-compose-cluster-3-9.yaml logs -f
 ```
 ## Cleanup
 
 To stop and remove all containers and networks, run:
 
 ```bash
-docker-compose -f docker-compose-cluster-3-9.yaml down
+docker compose -f docker-compose-cluster-3-9.yaml down
 ```
 
 ## Data Distribution in the Memcached Cluster
